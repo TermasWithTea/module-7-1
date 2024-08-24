@@ -15,6 +15,7 @@ class Shop:
     def get_products(self):
         with open(self.__file_name, 'r') as file:
             self.products = file.read()
+        return self.products
 
     def add(self, *products):
        ex_products = set()
